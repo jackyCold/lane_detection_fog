@@ -6,23 +6,15 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>基于机器视觉的雾天环境下车道线识别技术研究(蔡兵)</title>
     
-    <meta name="description" content="angular-practice-001" />
-    <meta name="author" content="lulua87" />
-
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <meta name="description" content="智能车道路雾天识别" />
+    <meta name="author" content="caibing" />
 
     <link href="css/impress-demo.css" rel="stylesheet" />
 </head>
 
 <body class="impress-not-supported">
-
-    <div class="fallback-message">
-        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-    </div>
-
     <div id="impress">
-        <div class="slide">
+        <div class="step slide">
             <ul>
                 <li>为了解决车辆安全问题，减少交通事故的发生率，车辆主动安全辅助驾驶系统成为了热点话题。而基于机器视觉的车道线识别，作为车辆安全辅助驾驶系统的重要组成部分，成为了研究热点。</li>
 
@@ -30,6 +22,22 @@
                 </li>
             </ul>
         </div>
+        <div class="step slide">
+            <q>各部分关系</q>
+            <img src="img/各部分关系.png">
+        </div>
+        <div class="step slide">
+            <q>机器视觉</q>
+            <img src="img/机器视觉.png">
+        </div>
     </div>
+    <script>
+        if ("ontouchstart" in document.documentElement) { 
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
 </body>
 </html>
